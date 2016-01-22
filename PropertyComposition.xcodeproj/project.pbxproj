@@ -49,7 +49,7 @@
 		4371861C1C51C20800BE0104 /* PropertyComposition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PropertyComposition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4371861F1C51C20800BE0104 /* PropertyComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PropertyComposition.h; sourceTree = "<group>"; };
 		437186211C51C20800BE0104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		437186261C51C20800BE0104 /* PropertyCompositionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyCompositionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		437186261C51C20800BE0104 /* PropertyComposition-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PropertyComposition-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4371862B1C51C20800BE0104 /* PropertyCompositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyCompositionTests.swift; sourceTree = "<group>"; };
 		4371862D1C51C20800BE0104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437186581C51D56100BE0104 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				4371861C1C51C20800BE0104 /* PropertyComposition.framework */,
-				437186261C51C20800BE0104 /* PropertyCompositionTests.xctest */,
+				437186261C51C20800BE0104 /* PropertyComposition-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,9 +193,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4371861B1C51C20800BE0104 /* PropertyComposition */ = {
+		4371861B1C51C20800BE0104 /* PropertyComposition-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 437186301C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition" */;
+			buildConfigurationList = 437186301C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-OSX" */;
 			buildPhases = (
 				437186171C51C20800BE0104 /* Sources */,
 				437186181C51C20800BE0104 /* Frameworks */,
@@ -206,14 +206,14 @@
 			);
 			dependencies = (
 			);
-			name = PropertyComposition;
+			name = "PropertyComposition-OSX";
 			productName = PropertyComposition;
 			productReference = 4371861C1C51C20800BE0104 /* PropertyComposition.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		437186251C51C20800BE0104 /* PropertyCompositionTests */ = {
+		437186251C51C20800BE0104 /* PropertyComposition-OSXTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 437186331C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyCompositionTests" */;
+			buildConfigurationList = 437186331C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-OSXTests" */;
 			buildPhases = (
 				437186221C51C20800BE0104 /* Sources */,
 				437186231C51C20800BE0104 /* Frameworks */,
@@ -225,9 +225,9 @@
 			dependencies = (
 				437186291C51C20800BE0104 /* PBXTargetDependency */,
 			);
-			name = PropertyCompositionTests;
+			name = "PropertyComposition-OSXTests";
 			productName = PropertyCompositionTests;
-			productReference = 437186261C51C20800BE0104 /* PropertyCompositionTests.xctest */;
+			productReference = 437186261C51C20800BE0104 /* PropertyComposition-OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -260,8 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4371861B1C51C20800BE0104 /* PropertyComposition */,
-				437186251C51C20800BE0104 /* PropertyCompositionTests */,
+				4371861B1C51C20800BE0104 /* PropertyComposition-OSX */,
+				437186251C51C20800BE0104 /* PropertyComposition-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +307,7 @@
 /* Begin PBXTargetDependency section */
 		437186291C51C20800BE0104 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4371861B1C51C20800BE0104 /* PropertyComposition */;
+			target = 4371861B1C51C20800BE0104 /* PropertyComposition-OSX */;
 			targetProxy = 437186281C51C20800BE0104 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -417,7 +417,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.PropertyComposition;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PropertyComposition;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -441,7 +441,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.PropertyComposition;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PropertyComposition;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -488,7 +488,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		437186301C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition" */ = {
+		437186301C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				437186311C51C20800BE0104 /* Debug */,
@@ -496,7 +496,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		437186331C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyCompositionTests" */ = {
+		437186331C51C20800BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-OSXTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				437186341C51C20800BE0104 /* Debug */,
