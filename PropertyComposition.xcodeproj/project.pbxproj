@@ -19,6 +19,18 @@
 		4371868F1C51D9FC00BE0104 /* PropertyType+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */; };
 		437186911C51DFDC00BE0104 /* PropertyType+CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */; };
 		437186931C526F1D00BE0104 /* TupleFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186921C526F1D00BE0104 /* TupleFunctions.swift */; };
+		437186A31C52701A00BE0104 /* PropertyComposition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437186991C52701A00BE0104 /* PropertyComposition.framework */; };
+		437186B01C52703300BE0104 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437186581C51D56100BE0104 /* ReactiveCocoa.framework */; };
+		437186B11C52703300BE0104 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4371865A1C51D56100BE0104 /* Result.framework */; };
+		437186B21C52703700BE0104 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437186581C51D56100BE0104 /* ReactiveCocoa.framework */; };
+		437186B31C52703700BE0104 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4371865A1C51D56100BE0104 /* Result.framework */; };
+		437186B51C52704200BE0104 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 437186581C51D56100BE0104 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		437186B61C52704200BE0104 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4371865A1C51D56100BE0104 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		437186B71C52705600BE0104 /* PropertyType+CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */; };
+		437186B81C52705600BE0104 /* PropertyType+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */; };
+		437186B91C52705600BE0104 /* TupleFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186921C526F1D00BE0104 /* TupleFunctions.swift */; };
+		437186BA1C52705900BE0104 /* PropertyCompositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371862B1C51C20800BE0104 /* PropertyCompositionTests.swift */; };
+		437186BB1C52706300BE0104 /* PropertyComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4371861F1C51C20800BE0104 /* PropertyComposition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +40,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4371861B1C51C20800BE0104;
 			remoteInfo = PropertyComposition;
+		};
+		437186A41C52701A00BE0104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437186131C51C20800BE0104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437186981C52701A00BE0104;
+			remoteInfo = "PropertyComposition-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +59,17 @@
 			files = (
 				4371868C1C51D59600BE0104 /* ReactiveCocoa.framework in CopyFiles */,
 				4371868D1C51D59600BE0104 /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437186B41C52703C00BE0104 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				437186B51C52704200BE0104 /* ReactiveCocoa.framework in CopyFiles */,
+				437186B61C52704200BE0104 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,8 @@
 		4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+Operators.swift"; sourceTree = "<group>"; };
 		437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+CombineLatest.swift"; sourceTree = "<group>"; };
 		437186921C526F1D00BE0104 /* TupleFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleFunctions.swift; sourceTree = "<group>"; };
+		437186991C52701A00BE0104 /* PropertyComposition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PropertyComposition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		437186A21C52701A00BE0104 /* PropertyComposition-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PropertyComposition-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +117,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		437186951C52701A00BE0104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437186B01C52703300BE0104 /* ReactiveCocoa.framework in Frameworks */,
+				437186B11C52703300BE0104 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4371869F1C52701A00BE0104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437186A31C52701A00BE0104 /* PropertyComposition.framework in Frameworks */,
+				437186B21C52703700BE0104 /* ReactiveCocoa.framework in Frameworks */,
+				437186B31C52703700BE0104 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,6 +154,8 @@
 			children = (
 				4371861C1C51C20800BE0104 /* PropertyComposition.framework */,
 				437186261C51C20800BE0104 /* PropertyComposition-OSXTests.xctest */,
+				437186991C52701A00BE0104 /* PropertyComposition.framework */,
+				437186A21C52701A00BE0104 /* PropertyComposition-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,6 +243,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		437186961C52701A00BE0104 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437186BB1C52706300BE0104 /* PropertyComposition.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +291,43 @@
 			productReference = 437186261C51C20800BE0104 /* PropertyComposition-OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		437186981C52701A00BE0104 /* PropertyComposition-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437186AA1C52701A00BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-iOS" */;
+			buildPhases = (
+				437186941C52701A00BE0104 /* Sources */,
+				437186951C52701A00BE0104 /* Frameworks */,
+				437186961C52701A00BE0104 /* Headers */,
+				437186971C52701A00BE0104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PropertyComposition-iOS";
+			productName = "PropertyComposition-iOS";
+			productReference = 437186991C52701A00BE0104 /* PropertyComposition.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		437186A11C52701A00BE0104 /* PropertyComposition-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437186AD1C52701A00BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-iOSTests" */;
+			buildPhases = (
+				4371869E1C52701A00BE0104 /* Sources */,
+				4371869F1C52701A00BE0104 /* Frameworks */,
+				437186A01C52701A00BE0104 /* Resources */,
+				437186B41C52703C00BE0104 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437186A51C52701A00BE0104 /* PBXTargetDependency */,
+			);
+			name = "PropertyComposition-iOSTests";
+			productName = "PropertyComposition-iOSTests";
+			productReference = 437186A21C52701A00BE0104 /* PropertyComposition-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +342,12 @@
 						CreatedOnToolsVersion = 7.3;
 					};
 					437186251C51C20800BE0104 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					437186981C52701A00BE0104 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					437186A11C52701A00BE0104 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -262,6 +366,8 @@
 			targets = (
 				4371861B1C51C20800BE0104 /* PropertyComposition-OSX */,
 				437186251C51C20800BE0104 /* PropertyComposition-OSXTests */,
+				437186981C52701A00BE0104 /* PropertyComposition-iOS */,
+				437186A11C52701A00BE0104 /* PropertyComposition-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,6 +381,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		437186241C51C20800BE0104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437186971C52701A00BE0104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437186A01C52701A00BE0104 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +422,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		437186941C52701A00BE0104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437186B81C52705600BE0104 /* PropertyType+Operators.swift in Sources */,
+				437186B91C52705600BE0104 /* TupleFunctions.swift in Sources */,
+				437186B71C52705600BE0104 /* PropertyType+CombineLatest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4371869E1C52701A00BE0104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437186BA1C52705900BE0104 /* PropertyCompositionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -309,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = 4371861B1C51C20800BE0104 /* PropertyComposition-OSX */;
 			targetProxy = 437186281C51C20800BE0104 /* PBXContainerItemProxy */;
+		};
+		437186A51C52701A00BE0104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 437186981C52701A00BE0104 /* PropertyComposition-iOS */;
+			targetProxy = 437186A41C52701A00BE0104 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,6 +619,90 @@
 			};
 			name = Release;
 		};
+		437186AB1C52701A00BE0104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PropertyComposition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.PropertyComposition;
+				PRODUCT_NAME = PropertyComposition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		437186AC1C52701A00BE0104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PropertyComposition/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.natestedman.PropertyComposition;
+				PRODUCT_NAME = PropertyComposition;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		437186AE1C52701A00BE0104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PropertyCompositionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natestedman.PropertyComposition-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		437186AF1C52701A00BE0104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = PropertyCompositionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.natestedman.PropertyComposition-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -501,6 +728,22 @@
 			buildConfigurations = (
 				437186341C51C20800BE0104 /* Debug */,
 				437186351C51C20800BE0104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		437186AA1C52701A00BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437186AB1C52701A00BE0104 /* Debug */,
+				437186AC1C52701A00BE0104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		437186AD1C52701A00BE0104 /* Build configuration list for PBXNativeTarget "PropertyComposition-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437186AE1C52701A00BE0104 /* Debug */,
+				437186AF1C52701A00BE0104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
