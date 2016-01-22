@@ -18,6 +18,7 @@
 		4371868D1C51D59600BE0104 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4371865F1C51D56100BE0104 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4371868F1C51D9FC00BE0104 /* PropertyType+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */; };
 		437186911C51DFDC00BE0104 /* PropertyType+CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */; };
+		437186931C526F1D00BE0104 /* TupleFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186921C526F1D00BE0104 /* TupleFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		4371866D1C51D56100BE0104 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+Operators.swift"; sourceTree = "<group>"; };
 		437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+CombineLatest.swift"; sourceTree = "<group>"; };
+		437186921C526F1D00BE0104 /* TupleFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TupleFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				4371861F1C51C20800BE0104 /* PropertyComposition.h */,
 				437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */,
 				4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */,
+				437186921C526F1D00BE0104 /* TupleFunctions.swift */,
 				437186211C51C20800BE0104 /* Info.plist */,
 			);
 			path = PropertyComposition;
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				437186911C51DFDC00BE0104 /* PropertyType+CombineLatest.swift in Sources */,
+				437186931C526F1D00BE0104 /* TupleFunctions.swift in Sources */,
 				4371868F1C51D9FC00BE0104 /* PropertyType+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
