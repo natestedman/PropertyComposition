@@ -23,4 +23,21 @@ class PropertyCompositionTests: XCTestCase
         property.value = 1
         XCTAssertEqual(mapped.value, 2)
     }
+
+    func testCombineLatestWith()
+    {
+        let properties = (MutableProperty(0), MutableProperty(0))
+        let combined = properties.0.combineLatestWith(properties.1)
+
+        XCTAssertEqual(combined.value.0, 0)
+        XCTAssertEqual(combined.value.1, 0)
+
+        properties.0.value = 1
+        XCTAssertEqual(combined.value.0, 1)
+        XCTAssertEqual(combined.value.1, 0)
+
+        properties.1.value = 1
+        XCTAssertEqual(combined.value.0, 1)
+        XCTAssertEqual(combined.value.1, 1)
+    }
 }

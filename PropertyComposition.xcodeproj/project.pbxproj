@@ -17,6 +17,7 @@
 		4371868C1C51D59600BE0104 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4371865D1C51D56100BE0104 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4371868D1C51D59600BE0104 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4371865F1C51D56100BE0104 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4371868F1C51D9FC00BE0104 /* PropertyType+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */; };
+		437186911C51DFDC00BE0104 /* PropertyType+CombineLatest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4371866B1C51D56100BE0104 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 		4371866D1C51D56100BE0104 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Result.framework; sourceTree = "<group>"; };
 		4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+Operators.swift"; sourceTree = "<group>"; };
+		437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PropertyType+CombineLatest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				4371861F1C51C20800BE0104 /* PropertyComposition.h */,
+				437186901C51DFDC00BE0104 /* PropertyType+CombineLatest.swift */,
 				4371868E1C51D9FC00BE0104 /* PropertyType+Operators.swift */,
 				437186211C51C20800BE0104 /* Info.plist */,
 			);
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437186911C51DFDC00BE0104 /* PropertyType+CombineLatest.swift in Sources */,
 				4371868F1C51D9FC00BE0104 /* PropertyType+Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
