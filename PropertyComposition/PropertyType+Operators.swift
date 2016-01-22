@@ -8,19 +8,21 @@
 // You should have received a copy of the CC0 Public Domain Dedication along with
 // this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-import PropertyComposition
 import ReactiveCocoa
-import XCTest
 
-class PropertyCompositionTests: XCTestCase
+extension PropertyType
 {
-    func testMap()
-    {
-        let property = MutableProperty(0)
-        let mapped = property.map({ $0 + 1 })
+    /**
+     Maps each value in the property to a new value.
 
-        XCTAssertEqual(mapped.value, 1)
-        property.value = 1
-        XCTAssertEqual(mapped.value, 2)
+     - parameter transform: The value transformation function.
+     */
+    @warn_unused_result
+    public func map<U>(transform: Value -> U) -> AnyProperty<U>
+    {
+        return AnyProperty(
+            initialValue: transform(value),
+            signal: signal.map(transform)
+        )
     }
 }
